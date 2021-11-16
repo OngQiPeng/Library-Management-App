@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/primaryTextColor"
+        android:textSize = "30sp"
+        android:textStyle = "bold"
+        android:text="User Profile"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/displayName"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="Username:"/>
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00BCD4"
+            android:textSize="25sp"
+            android:text="userName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/displayEmail"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="Email:"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00BCD4"
+            android:textSize="25dp"
+            android:text="Email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_changeUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change UserName"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_changeEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Email"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_changePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Change Password" />
+
+
+</LinearLayout>

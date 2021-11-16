@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/booking_background"
+    tools:context=".DiscussionRoomBookingFragment">
+
+    <Button
+        android:id="@+id/btnTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="8:00-10:00am"
+        android:background="@drawable/time_round_button"
+        app:layout_constraintStart_toStartOf="@+id/timeText"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <Button
+        android:id="@+id/btnTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="10:00-12:00pm"
+        android:background="@drawable/time_round_button"
+        app:layout_constraintStart_toEndOf="@+id/btnTime1"
+        app:layout_constraintTop_toTopOf="@+id/btnTime1" />
+
+    <Button
+        android:id="@+id/btnTime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="12:00-2:00pm"
+        android:background="@drawable/time_round_button"
+        app:layout_constraintStart_toEndOf="@+id/btnTime2"
+        app:layout_constraintTop_toTopOf="@+id/btnTime1" />
+
+    <Button
+        android:id="@+id/btnTime4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:text="2:00-4:00pm"
+        android:background="@drawable/time_round_button"
+        app:layout_constraintStart_toStartOf="@+id/btnTime1"
+        app:layout_constraintTop_toBottomOf="@+id/btnTime1" />
+
+    <Button
+        android:id="@+id/btnTime5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="4:00-6:00pm"
+        android:background="@drawable/time_round_button"
+        app:layout_constraintStart_toEndOf="@+id/btnTime4"
+        app:layout_constraintTop_toTopOf="@+id/btnTime4" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/dateText"
+        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+    <TextView
+        android:id="@+id/textBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Create Booking"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="Date"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBooking" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Time : "
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/etDate"
+        app:layout_constraintTop_toBottomOf="@+id/etDate" />
+
+    <TextView
+        android:id="@+id/roomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Room : "
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/timeText"
+        app:layout_constraintTop_toBottomOf="@+id/btnTime4" />
+
+    <Button
+        android:id="@+id/btnRoom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=" Discussion Room 1 - Capacity 4 person   "
+        android:background="@drawable/room_button"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/roomText"
+        app:layout_constraintTop_toBottomOf="@+id/roomText" />
+
+    <Button
+        android:id="@+id/btnRoom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Discussion Room 2 - Capacity 4 person   "
+        android:background="@drawable/room_button"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/btnRoom1"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoom1" />
+
+    <Button
+        android:id="@+id/btnRoom3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Discussion Room 3 - Capacity 5 person   "
+        android:background="@drawable/room_button"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/btnRoom2"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoom2" />
+
+    <Button
+        android:id="@+id/btnRoom4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Discussion Room 4 - Capacity 10 person "
+        android:background="@drawable/room_button"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/btnRoom3"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoom3" />
+
+    <Button
+        android:id="@+id/btnBookNow"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Book Now"
+        android:textSize="12dp"
+        android:textColor="#fff5e7"
+        android:background="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRoom4" />
+
+    <TextView
+        android:id="@+id/tvBookTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/timeText"
+        app:layout_constraintTop_toTopOf="@+id/timeText" />
+
+    <TextView
+        android:id="@+id/tvBookRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" - "
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/roomText"
+        app:layout_constraintTop_toTopOf="@+id/roomText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

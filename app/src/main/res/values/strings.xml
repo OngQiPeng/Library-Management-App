@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">LibraryManagementApp</string>
+    <string name="scan">Scan the QR Code of a book..</string>
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_hint">Already have an account? Login</string>
+    <string name="signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_name_hint">Name</string>
+    <string name="login_mobile_number_hint">Mobile Number</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="bookName_hint">Book Name</string>
+    <string name="bookType_hint">Book Type</string>
+    <string name="forgotPassword_hint">Forgot Password?</string>
+
+    <string-array name="bookGenre">
+        <item>Please select a genre</item>
+        <item>Action and Adventure</item>
+        <item>Classics</item>
+        <item>Comic Book or Graphic Novel</item>
+        <item>Detective and Mystery</item>
+        <item>Fantasy</item>
+        <item>Historical Fiction</item>
+        <item>Horror</item>
+        <item>Literacy Fiction</item>
+        <item>Romance</item>
+        <item>Science Fiction (Sci-Fi)</item>
+        <item>Short Stories</item>
+        <item>Suspense and Thrillers</item>
+        <item>Women\'s Fiction</item>
+        <item>Biographies and Autobiographies</item>
+        <item>Cookbooks</item>
+        <item>Essays</item>
+        <item>History</item>
+        <item>Memoir</item>
+        <item>Poetry</item>
+        <item>Self-Help</item>
+        <item>True Crime</item>
+    </string-array>
+
+</resources>

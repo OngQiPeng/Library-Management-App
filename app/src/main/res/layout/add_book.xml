@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/primaryTextColor"
+        android:textSize = "30sp"
+        android:textStyle = "bold"
+        android:text="Add Book"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputBookName"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="20dp"
+        app:hintTextColor="#132DC1">
+
+        <EditText
+            android:id="@+id/et_bookName"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize = "12sp"
+            android:backgroundTint ="@color/primaryTextColor"
+            android:hint="@string/bookName_hint"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputBookType"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="20dp"
+        app:hintTextColor="#132DC1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "12sp"
+            android:backgroundTint ="@color/primaryTextColor"
+            android:text="Book Type" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_bookType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtn_fiction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fiction"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn_non_fiction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-fiction"/>
+
+        </RadioGroup>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputBookGenre"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="20dp"
+        app:hintTextColor="#132DC1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "12sp"
+            android:backgroundTint ="@color/primaryTextColor"
+            android:text="Book Genre" />
+
+        <Spinner
+            android:id="@+id/spinner_bookGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_addBook"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background = "@drawable/login_button_bk"
+        android:textColor = "@color/whiteTextColor"
+        android:textStyle = "bold"
+        android:text="Add Book"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp" />
+
+    <ProgressBar
+        android:id="@+id/addBook_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>
